@@ -1,0 +1,12 @@
+.forumPage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.blur{
+    filter: blur(5px);
+}

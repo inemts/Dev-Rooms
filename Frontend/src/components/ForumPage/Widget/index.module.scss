@@ -1,0 +1,91 @@
+.widget{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #CECECE;
+    overflow: hidden;
+    
+
+    .widget_header{
+        display: flex;
+        height: 60px;
+        border-bottom: 1px solid #CECECE;
+
+        gap: 60px;
+
+        & > button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            transition: 0.2s;
+            color: #64616B;
+
+            &:first-child{
+                margin-left: 30px;
+            }
+
+            &:hover::before{
+                content: "";
+                position: absolute;
+                top: 100%;
+                transform: translateY(-100%);
+                height: 4px;
+                background-color: var(--background-purple);
+    
+                animation-name: button_before_underline;
+                animation-duration: 0.2s;
+                animation-fill-mode: forwards;
+    
+            }
+
+            &:hover{
+                color: var(--background-purple);
+            }
+        }
+
+    }
+
+    .widget_content{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        
+
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.active{ 
+    color: var(--background-purple);
+}
+
+.active::before{
+    content: "";
+            position: absolute;
+            top: 100%;
+            transform: translateY(-100%);
+            width: 100%;
+            height: 4px;
+            background-color: var(--background-purple);
+}
+
+@keyframes button_before_underline {
+    from {
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+.blur{
+    filter: blur(5px);
+    transition: 0.5s;
+    pointer-events: none;
+}

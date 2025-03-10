@@ -1,0 +1,28 @@
+@import url("./font-faces.scss");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--font-press-start-400);
+}
+
+:root{
+    --font-press-start-400: "PressStart400";
+    --background-purple: #6B5798;
+}
+
+.blur{
+    transition: 0.5s;
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.hide{
+    display: none !important;
+}
+
+.purple_level{
+    background-color: var(--background-purple) !important;
+}

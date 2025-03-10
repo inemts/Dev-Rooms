@@ -1,0 +1,129 @@
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-purple);
+
+    button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 100%;
+        transition: 0.2s;
+        position: relative !important;   
+    }
+
+    .content{
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .auth_links{
+            display: flex;
+            gap: 15px;
+
+            .container{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                & > button{
+                    width: 25px;
+                    height: 25px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin-left: 15px;
+                    & > img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .link{
+            font-size: 24px !important;
+        }
+
+        .login, .link{
+            position: relative;
+            font-size: 16px;
+            display: flex;
+            align-items: center; // Добавлено для центрирования по вертикали
+            height: 100%; 
+
+            .login > a{
+                color: white;
+            }
+
+            &:hover::before{
+                content: "";
+                position: absolute;
+                top: 100;
+                bottom: 0px;
+                height: 4px;
+                background-color: white;
+                animation-name: button_before_underline;
+                animation-duration: 0.2s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .left_content{
+
+            display: flex;
+            align-items: center;
+
+            & > span{
+                font-size: 36px;
+                color: #FFFAC7;
+            }
+        
+            .buttons{
+                display: flex;
+                gap: 60px;
+                justify-content: space-between;
+                margin-left: 60px;
+                height: 100%;
+                
+                & > button{
+                    color: white;
+                    font-size: 24px;
+                }
+    
+                & > button:hover::before{
+                    content: "";
+                    position: absolute;
+                    top: 100;
+                    bottom: 0px;
+                    height: 4px;
+                    background-color: white;
+                    animation-name: button_before_underline;
+                    animation-duration: 0.2s;
+                    animation-fill-mode: forwards;
+                }
+    
+            
+            }
+        }
+
+    }
+
+}
+
+@keyframes button_before_underline {
+    from {
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+    }
+}

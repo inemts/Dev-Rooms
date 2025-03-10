@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #D2D2D2;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 24px;
+    color: var(--background-purple);
+    background-color: white;
+}

@@ -1,0 +1,39 @@
+.user_topics{
+    margin-top: 60px;
+    width: 100%;
+    background-color: white;
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        font-size: 24px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: var(--background-purple);
+        color: white;
+    }
+
+    .topics{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+
+        .empty_topic{
+            width: 100%;
+            height: 80px;
+            
+        }
+    }
+
+    margin-bottom: 60px;
+}

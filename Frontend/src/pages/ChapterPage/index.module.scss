@@ -1,0 +1,20 @@
+.chapter_page{
+    width: 100%;
+
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #CECECE;
+    margin-bottom: 60px;
+
+    & > header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 40px;
+        height: 80px;
+        font-size: 24px;
+        color: #6B5798;
+        border-bottom: 1px solid #CECECE;
+    }
+}
